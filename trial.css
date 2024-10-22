@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white; 
+    margin: 1.5625em 3.4375em; /* 25px 55px */
+}
+
+header {
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; 
+}
+
+.logo {
+    font-size: 2em; /* 32px */
+    font-weight: bold;
+    text-align: left;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    font-size: 1.25em; /* 20px */
+    font-weight: normal;
+    gap: 2.5em; /* 40px */
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-us-button {
+    font-size: 1.25em; /* 20px */
+    background-color: transparent; 
+    padding: 0.9375em 1.875em; /* 15px 30px */
+    color: white; 
+    text-decoration: none;
+    border-radius: 0.875em; /* 14px */
+    border: 1px solid white; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.contact-us-button:hover {
+    background-color: white; 
+    color: black; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.intro {   
+    margin: 1.875em 0; /* 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .text {
+    max-width: 37.5em; /* 600px */
+}
+
+.intro .text h1 {
+    font-size: 3.75em; /* 60px */
+}
+
+.intro .text p {
+    font-weight: normal;
+    font-size: 1.25em; /* 20px */
+}
+
+.intro-blue-text {
+    color: #2A7EF8;
+}
+
+.intro button {
+    background-color: #2A7EF8;
+    font-size: 1.25em; /* 20px */
+    color: white;
+    border: none;
+    padding: 0.75em 1.6875em; /* 12px 27px */
+    cursor: pointer;
+    border-radius: 0.875em; /* 14px */
+}
+
+.intro button:hover {
+    background-color: #0056b3;
+}
+
+.intro .image {
+    margin-left: 1.875em; /* 30px */
+}
+
+.intro .image img {
+    width: 100%; 
+    max-width: 31.25em; /* 500px */
+}
+
+/* Responsive Styles */
+
+/* For large desktops (1200px and above) */
+@media (max-width: 75em) { /* 1200px */
+    .logo {
+        font-size: 1.875em; /* 30px */
+    }
+
+    .nav-links {
+        gap: 2em; /* 32px */
+        font-size: 1.125em; /* 18px */
+    }
+
+    .intro .text h1 {
+        font-size: 3.5em; /* 56px */
+    }
+
+    .intro .text p {
+        font-size: 1.125em; /* 18px */
+    }
+
+    .intro .image img {
+        max-width: 28.125em; /* 450px */
+    }
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 48em) { /* 768px */
+    body {
+        margin: 0.625em; /* 10px */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.625em; /* 10px */
+        font-size: 1.125em; /* 18px */
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .text h1 {
+        font-size: 2.25em; /* 36px */
+        text-align: center;
+    }
+
+    .intro .text p {
+        font-size: 1.125em; /* 18px */
+        text-align: center;
+    }
+
+    .intro .image {
+        margin-left: 0;
+        margin-top: 1.25em; /* 20px */
+    }
+
+    .intro .image img {
+        max-width: 25em; /* 400px */
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 30em) { /* 480px */
+    .logo {
+        font-size: 1.5em; /* 24px */
+    }
+
+    .nav-links {
+        font-size: 1em; /* 16px */
+    }
+
+    .intro .text h1 {
+        font-size: 1.75em; /* 28px */
+        text-align: center;
+    }
+
+    .intro .text p {
+        font-size: 1em; /* 16px */
+    }
+
+    .intro button {
+        font-size: 1em; /* 16px */
+        padding: 0.5em 1.25em; /* 8px 20px */
+    }
+
+    .intro .image img {
+        max-width: 20em; /* 320px */
+    }
+
+    .contact-us-button {
+        font-size: 1em; /* 16px */
+        padding: 0.625em 1.25em; /* 10px 20px */
+    }
+}
